@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.screenshots      = ["http://antoniocasero.github.io/ACPDownload/screenshots/acpdownload-gif.gif",
                         "http://antoniocasero.github.io/ACPDownload/screenshots/acpdownload-screenshot-1.png"]
 # Source Info
-  s.platform     =  :ios, '7.0'
+  s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
   s.source           = { :git => "https://github.com/antoniocasero/ACPDownload.git", :tag => s.version.to_s }
   s.source_files = 'ACPDownload'
   s.requires_arc = true
